@@ -16,7 +16,7 @@ class predictionData(BaseModel):
     DiabetesPedigreeFunction: float
     Age: int
 
-with open('New_svm_model.pkl', 'rb') as f:
+with open('New_RF_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 with open('scaler.pkl', 'rb') as f:
